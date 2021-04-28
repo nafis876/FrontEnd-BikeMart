@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Bootstrap Download</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    </head>
+    <body>
+
+      <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+              <a href="#" class="navbar-brand" href="download.html">
+                  Bike Mart
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarId">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="download.html" tabindex="-1" aria-disabled="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="order.html" tabindex="-1" aria-disabled="true">Order</a>
+                    </li>
+
+                  </ul>
+                  <form class="form-inline my-2">
+                        <input class="form-control mr-sm-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search" >
+                        <button class="btn btn-outline-primary my-2 my-sm-0 d-none d-lg-block" type="submit">Search</button>
+                        <button type="button" class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal">Log in</button>
+                        <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal2" type="button">Register</button>
+                      <button class="btn bg-primary my-2 my-lg-0" data-toggle="modal" data-target="#myModal23" type="button">Cart</button>
+                     </form>
+
+              </div>
+          </nav>
+      </div>
+
+
+      <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModallabel2">
+        <div class="modal-dialog modal-dialog-srollable">
+          <div class="modal-content ml-1">
+            <div class="modal-header">
+              <h4 class="modal-title ml-1">Registration</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+             <div class="container">
+              <div class="row ml-1">
+      <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" aria-label="default" placeholder="First Name" id="fname">
+              </div>
+              <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control " aria-label="default" placeholder="Last Name" id="lname">
+              </div>
+             </div>
+      <div class="row ml-1">
+               <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" aria-label="default" placeholder="example@gmail.com" id="email"name="email" onkeyup="mailvalidate();"> <span id="inv-mail" style="display:none;color:red;">Invalid Email</span><br/>
+      </div>
+        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control " aria-label="default" placeholder="Phone Number" id="phone" name="phone" onkeyup="phonevalidate();"> <span id="inv-phone" style="display:none;color:red;">Invalid phone number</span><br/>
+              </div>
+        </div>
+
+        <div class="row ml-1">
+              <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" placeholder="********"  id="pwd">
+                  <small> At least 10 characters,
+Must contain at least one Capital letter,
+Must contain at least one lowercase letter,
+Must contain at least one numbere.</small>
+        <div class="invalid-feedback">Incorrect password formet</div>
+        <div class="valid-feedback">Correct password formet</div>
+       </div>
+         <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="cpwd">Confirm Password:</label>
+                <input type="password" class="form-control " placeholder="********" id="cpwd">
+                <div class="invalid-feedback">password did not match</div>
+                <div class="valid-feedback">password  match</div>
+         </div>
+      </div>
+          <div class="form-group">
+
+             <div class="row ml-1">
+
+
+
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+        </div>
+        </div>
+      </div>
+      </div>
+
+             <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModallabel">
+              <div class="modal-dialog">
+               <div class="modal-content">
+                <div class="modal-header">
+              <h4 class="modal-title">Log in</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+    <div class="modal-body ">
+
+  <div class="row ml-1">
+ <div class="form-group col-12">
+    <label for="email">Email:</label>
+                        <input type="email" class="form-control w-100" aria-label="default" placeholder="example@gmail.com" id="email">
+                    </div>
+                  </div>
+  <div class="row ml-1">
+<div class="form-group col-12">
+    <label for="pwd">Password:</label>
+                        <input type="password" class="form-control w-100" placeholder="Enter password" id="pwd">
+                   </div>
+                 </div>
+
+              </div>
+
+                <div class="modal-footer mr-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login</button>
+                </div>
+
+              </div>
+             </div>
+            </div>
+
+
+<!--order-->
+<div class="container">
+    <div class="row"style="margin-top: 105px;>
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/card1.jpg" style="width: 100px; height: 100px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Honda CB 150R ExMotion</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Honda</a></h5>
+                                <span>Status: </span><span class="text-success"><strong>...</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>550,000</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>1650,000</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/card5.jpg" style="width: 100px; height: 100px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Kawasaki Ninja 125 ABS</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Kawasaki</a></h5>
+                                <span>Status: </span><span class="text-warning"><strong>...</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>479,000</strong></td>
+                        <td class="col-md-1 text-center"><strong>958,000</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>2,608,000</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>15% vat </h5></td>
+                        <td class="text-right"><h5><strong>391,200</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>2,999,200</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                        <button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--form-->
+<div class="modal-body">
+       <div class="container">
+         <h3>Billing address</h3>
+         <hr>
+        <div class="row ml-1">
+
+<div class="form-group col-lg-3 col-md-12 col-sm-12">
+          <label for="fname">First Name:</label>
+          <input type="text" class="form-control" aria-label="default" placeholder="First Name" id="fname">
+        </div>
+        <div class="form-group col-lg-3 col-md-12 col-sm-12">
+          <label for="lname">Last Name:</label>
+          <input type="text" class="form-control " aria-label="default" placeholder="Last Name" id="lname">
+        </div>
+       </div>
+       <div class="row ml-1">
+                <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                 <label for="uname">User Name:</label>
+                 <input type="text" class="form-control" aria-label="default" placeholder="@user name" id="uname"name="uname" onkeyup="unamevalidate();"> <span id="inv-mail" style="display:none;color:red;">Invalid Email</span><br/>
+       </div>
+       </div>
+<div class="row ml-1">
+         <div class="form-group col-lg-6 col-md-12 col-sm-12">
+          <label for="email1">Email:</label>
+          <input type="email1" class="form-control" aria-label="default" placeholder="example@gmail.com" id="email1"name="email1" onkeyup="mailvalidate1();"> <span id="inv-mail1" style="display:none;color:red;">Invalid Email</span><br/>
+</div>
+</div>
+<div class="row ml-1">
+  <div class="form-group col-lg-6 col-md-12 col-sm-12">
+          <label for="phone1">Phone: +88-11 digits</label>
+          <input type="text" class="form-control " aria-label="default" placeholder="Phone Number" id="phone1" name="phone1" onkeyup="phonevalidate1();"> <span id="inv-phone2" style="display:none;color:red;">Invalid phone number</span><br/>
+        </div>
+  </div>
+  <div class="row ml-1">
+           <div class="form-group col-lg-6 col-md-12 col-sm-12">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" aria-label="default" placeholder="bulding or appertment address" id="address"name="address" onkeyup="addvalidate();"> <span id="inv-mail" style="display:none;color:red;">Invalid Email</span><br/>
+  </div>
+  </div>
+</div>
+<!--payment-->
+<div class="container">
+	<div class="row">
+		<div class="paymentCont">
+						<div class="headingWrap">
+								<h3 class="headingTop text-center">Select Your Payment Method</h3>
+								<p class="text-center">Created with bootsrap button and using radio button</p>
+                <hr>
+						</div>
+						<div class="paymentWrap">
+							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+					            <label class="btn paymentMethod active">
+					            	<div class="method visa"></div>
+                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/pay.jpg" style="width: 150px; height: 100px;"> </a>
+					                <input type="radio" name="options" checked>
+					            </label>
+					            <label class="btn paymentMethod">
+					            	<div class="method master-card"></div>
+                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/pay1.jpg" style="width: 150px; height: 100px;"> </a>
+					                <input type="radio" name="options">
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method amex"></div>
+                        <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/pay2.jpg" style="width: 150px; height: 100px;"> </a>
+					                <input type="radio" name="options">
+					            </label>
+
+
+					        </div>
+						</div>
+						<div class="footerNavWrap clearfix">
+
+              <button type="button" class="btn btn-success pl-15 pr-15 ml-5"style="text-align:center;">
+                  Checkout <span class="glyphicon glyphicon-play"></span>
+						</div>
+					</div>
+
+	</div>
+</div>
+
+
+    <div class="container-fluid ">
+      <div class="row mt-4 border border-dark bg-dark text-white "Style="border-width:10%;">
+       <div class="col-lg-5 border border-0 ml-3"  style="margin-top: 50px;">
+    <h4>Bike Mart</h4>
+    <h6>-Buy your Dream bike from here.</h6><h5> </h5>
+    <a>Call us : </a><a href="#" > 01796527698 </a><h5> </h5>
+    <a>Email :  </a><a href="#" >nkhaled162145@bscse.uiu.ac.bd </a><h5> </h5>
+
+  </div>
+      <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+        <h4>TOP FOREIGN BRANDS</h4>
+        <a href="#" >Honda (Japan) </a><h5> </h5>
+        <a href="#" >Yamaha (Japan) </a><h5> </h5>
+        <a href="#" >Suzuki (Japan)</a><h5> </h5>
+        <a href="#" >Bajaj (India) </a><h5> </h5>
+          <a href="#" >TVS (India)</a><h5> </h5>
+            <a href="#" >Keeway (multinational) </a><h5> </h5>
+
+
+      </div>
+          <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+            <h4>TOP LOCAL BRANDS</h4>
+            <a href="#" >Runner (Bangladesh) </a><h5> </h5>
+            <a href="#" >Walton (Bangladesh)</a><h5> </h5>
+            <a href="#" >Roadmaster (Bangladesh) </a><h5> </h5>
+            <a href="#" >AtlasZongshen (Bangladesh) </a><h5> </h5>
+
+          </div>
+              <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+                <h4>POPULAR SEARCH</h4>
+                <a href="#" >Fuel Efficient Bikes</a><h5> </h5>
+                <a href="#" >Modern Bikes with ABS </a><h5> </h5>
+                  <a href="#" >Cheape Bikes </a><h5> </h5>
+                    <a href="#" >Sports Bike </a><h5> </h5>
+
+              </div>
+
+
+              <div class="col-12 border border-0  text-primary  " style="text-align:center;margin-top: 50px;">
+                  <h6>@2020 MIt License,all right reserved.</h6>
+                </div>
+
+
+
+</div>
+</div>
+
+
+
+
+<script>
+function mailvalidate(){
+                  var emailexp=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+                  var useremail=document.getElementById("email").value;
+
+                  if(emailexp.test(useremail)){
+                      document.getElementById("inv-mail").style.display="none";
+                  }
+                  else{
+                      document.getElementById("inv-mail").style.display="inline";
+                  }
+              }
+              function phonevalidate(){
+                                var emailexp=/^([01]|\+88)?\d{11}$/;
+
+                                var userphone=document.getElementById("phone").value;
+
+                                if(emailexp.test(userphone)){
+                                    document.getElementById("inv-phone").style.display="none";
+                                }
+                                else{
+                                    document.getElementById("inv-phone").style.display="inline";
+                                }
+                            }
+
+var pass=document.getElementById('pwd');
+    pass.addEventListener('keyup',passcheck);
+
+
+
+function passcheck(){
+var passname=pass.value;
+
+var fname4=/^[A-Z]+[A-Za-z0-9]*[a-z]+.{10,}$/;
+
+if(fname4.test(passname)){
+               pass.classList.add('is-valid');
+               pass.classList.remove('is-invalid');
+           }
+           else{
+               pass.classList.add('is-invalid');
+               pass.classList.remove('is-valid');
+           }
+
+}
+
+var pass=document.getElementById('pwd');
+var pass1=document.getElementById('cpwd');
+    pass1.addEventListener('keyup',passcheck1);
+
+
+
+function passcheck1(){
+var passname=pass.value;
+var passname1=pass1.value;
+
+
+
+
+if(passname==passname1){
+               pass1.classList.add('is-valid');
+               pass1.classList.remove('is-invalid');
+           }
+           else{
+               pass1.classList.add('is-invalid');
+               pass1.classList.remove('is-valid');
+           }
+
+}
+
+
+function mailvalidate1(){
+                  var emailexp1=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+                  var useremail1=document.getElementById("email1").value;
+
+                  if(emailexp1.test(useremail1)){
+                      document.getElementById("inv-mail1").style.display="none";
+                  }
+                  else{
+                      document.getElementById("inv-mail1").style.display="inline";
+                  }
+              }
+              function phonevalidate1(){
+                                var emailexp2=/^([01]|\+88)?\d{11}$/;
+
+                                var userphone2=document.getElementById("phone1").value;
+
+                                if(emailexp2.test(userphone2)){
+                                    document.getElementById("inv-phone2").style.display="none";
+                                }
+                                else{
+                                    document.getElementById("inv-phone2").style.display="inline";
+                                }
+                            }
+
+
+    </script>
+
+
+
+
+
+
+
+        <!-- adding jquery then popper then bootstrap JS libraries -->
+        <script type="text/javascript" src="lib/js/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    </body>
+</html>

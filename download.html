@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Bootstrap Download</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    </head>
+    <body>
+
+      <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+              <a href="#" class="navbar-brand" href="download.html">
+                  Bike Mart
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarId">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="download.html" tabindex="-1" aria-disabled="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="order.html" tabindex="-1" aria-disabled="true">Order</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="admin.html" tabindex="-1" aria-disabled="true">Admin</a>
+                    </li>
+
+                  </ul>
+                  <form class="form-inline my-2">
+                        <input class="form-control mr-sm-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search" >
+                        <button class="btn btn-outline-primary my-2 my-sm-0 d-none d-lg-block" type="submit">Search</button>
+                        <button type="button" class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal">Log in</button>
+                        <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal2" type="button">Register</button>
+                      <button class="btn bg-primary my-2 my-lg-0" data-toggle="modal" data-target="#myModal23" type="button">Cart</button>
+                     </form>
+
+              </div>
+          </nav>
+      </div>
+      <!--cart-->
+      <div class="modal fade " id="myModal23" tabindex="-1" role="dialog" aria-labelledby="myModallabel">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+       <h4 class="modal-title">cart</h4>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+<div class="modal-body ">
+
+
+  <div class="media">
+      <a class="thumbnail pull-left" href="#"> <img class="media-object" src="images/card1.jpg" style="width: 100px; height: 100px;"> </a>
+      <div class="media-body">
+          <h4 class="media-heading"><a href="#">Honda CB 150R ExMotion</a></h4>
+          <h5 class="media-heading"> by <a href="#">Honda</a></h5>
+          <span>Status: </span><span class="text-success"><strong>...</strong></span>
+      </div>
+  </div>
+
+       </div>
+
+         <div class="modal-footer mr-2">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+         </div>
+
+       </div>
+      </div>
+     </div>
+
+<!--registation-->
+      <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModallabel2">
+        <div class="modal-dialog modal-dialog-srollable">
+          <div class="modal-content ml-1">
+            <div class="modal-header">
+              <h4 class="modal-title ml-1">Registration</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+             <div class="container">
+              <div class="row ml-1">
+      <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" aria-label="default" placeholder="First Name" id="fname">
+              </div>
+              <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control " aria-label="default" placeholder="Last Name" id="lname">
+              </div>
+             </div>
+      <div class="row ml-1">
+               <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" aria-label="default" placeholder="example@gmail.com" id="email"name="email" onkeyup="mailvalidate();"> <span id="inv-mail" style="display:none;color:red;">Invalid Email</span><br/>
+      </div>
+        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control " aria-label="default" placeholder="Phone Number" id="phone" name="phone" onkeyup="phonevalidate();"> <span id="inv-phone" style="display:none;color:red;">Invalid phone number</span><br/>
+              </div>
+        </div>
+
+        <div class="row ml-1">
+              <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" placeholder="********"  id="pwd">
+                  <small> At least 10 characters,
+Must contain at least one Capital letter,
+Must contain at least one lowercase letter,
+Must contain at least one numbere.</small>
+        <div class="invalid-feedback">Incorrect password formet</div>
+        <div class="valid-feedback">Correct password formet</div>
+       </div>
+         <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                <label for="cpwd">Confirm Password:</label>
+                <input type="password" class="form-control " placeholder="********" id="cpwd">
+                <div class="invalid-feedback">password did not match</div>
+                <div class="valid-feedback">password  match</div>
+         </div>
+      </div>
+          <div class="form-group">
+
+             <div class="row ml-1">
+
+
+
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+        </div>
+        </div>
+      </div>
+      </div>
+
+             <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModallabel">
+              <div class="modal-dialog">
+               <div class="modal-content">
+                <div class="modal-header">
+              <h4 class="modal-title">Log in</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+    <div class="modal-body ">
+
+  <div class="row ml-1">
+ <div class="form-group col-12">
+    <label for="email">Email:</label>
+                        <input type="email" class="form-control w-100" aria-label="default" placeholder="example@gmail.com" id="email">
+                    </div>
+                  </div>
+  <div class="row ml-1">
+<div class="form-group col-12">
+    <label for="pwd">Password:</label>
+                        <input type="password" class="form-control w-100" placeholder="Enter password" id="pwd">
+                   </div>
+                 </div>
+
+              </div>
+
+                <div class="modal-footer mr-2">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login</button>
+                </div>
+
+              </div>
+             </div>
+            </div>
+
+
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
+
+       <!-- the main inner part of the carousel -->
+       <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="5000">
+         <img src="images/img1.jpg" class="d-block w-100 h-50" alt="Slider image 1" loading="lazy">
+          <div class="carousel-caption d-none d-md-block">
+           <h5>Buy Bike</h5>
+
+         </div>
+        </div>
+       <div class="carousel-item" data-interval="5000">
+        <img src="images/img2.jpg" class="d-block w-100 h-50" alt="Slider image 2" loading="lazy">
+          <div class="carousel-caption d-none d-md-block">
+           <h5>Buy Bike </h5>
+
+        </div>
+       </div>
+        <div class="carousel-item" data-interval="5000">
+         <img src="images/img3.jpg" class="d-block w-100 h-50" alt="Slider image 3 " loading="lazy">
+          <div class="carousel-caption d-none d-md-block">
+           <h5>Buy Bike </h5>
+
+        </div>
+       </div>
+
+ <ol class="carousel-indicators">
+  <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselId" data-slide-to="1"></li>
+  <li data-target="#carouselId" data-slide-to="2"></li>
+ </ol>
+ <!-- adding left-right move buttons -->
+ <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+ </a>
+  <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+ </a>
+</div>
+       </div>
+       <div class="mt-4mb-3" style="margin-top: 50px;"style="margin-bottom: 50px;">
+       <h6 style="text-align: center;font-size: 200%; color:red;"> Most popular bikes</h6>
+</div>
+
+
+
+
+
+            <!-- deck of cards -->
+            <div class="card-deck">
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2   bg-white rounded" style="width: 2000px;">
+                  <img src="images/card1.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title"style="color:blue;">Honda CB 150R ExMotion </h5>
+                  <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                    <p class="card-text" style="color:red;">
+                         Engine :	150cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed	150 </p>
+                      <p class="card-text"style="color:red;">
+                         Mileage	35 Kmpl </p>
+                      <p class="card-text"style="color:red;">
+                        Price in BDT	550,000 </p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                    <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal24" type="button">Details</button>
+                  </div>
+                </div>
+                <div class="modal fade " id="myModal24" tabindex="-1" role="dialog" aria-labelledby="myModallabel24">
+                  <div class="modal-dialog modal-dialog-srollable">
+                    <div class="modal-content ml-1">
+                      <div class="modal-header">
+                        <h4 class="modal-title ml-1"style="text-align:center;">Honda CB 150R ExMotion</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                       <div class="container">
+                        <div class="row ml-1">
+                <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                          <img src="images/card1.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                        </div>
+                        <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                          <table style="border: 1px solid black;">
+  <tr>
+    <th style="border: 1px solid black;">CB150R Exmotion </th>
+    <th style="border: 1px solid black;">Price List</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">Honda CB150R Exmotion (ABS)</td>
+    <td style="border: 1px solid black;">Tk.550,000.00
+</td>
+</tr>
+<tr >
+  <td style="border: 1px solid black;"> Honda CB150R Exmotion (DD)</td>
+  <td style="border: 1px solid black;">N/A
+</td>
+  </tr>
+
+</table>
+
+                        </div>
+                       </div>
+                <div class="row ml-1">
+                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                          <p>
+                            <h4>Quick Overview :</h4>
+CB150R ExMotion is a new innovation surprise from the Japanese motorcycle manufacturer Honda. It's a wonderful motorcycle that combines a powerful water-cooled engines and cool designs. Although the bike does not sell Honda officially in Bangladesh market, it is coming from Thailand directly through importers of the country. This bike is integrated in Thailand for South Asian market.
+                          </p>
+                </div>
+                  <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                          <p>
+                            <h4>Key Features of Honda :</h4>
+                            <p style="font-weight:bold;color:blue;">- Powerful 4-valve, water-cooled engine with PGM-FI.</p>
+
+                                <p style="font-weight:bold;color:blue;">- The maintaining EURO-6 Standard</p>
+
+                              <p style="font-weight:bold;color:blue;">- ABS featured bike with G-Sensor for better stability and road safety.</p>
+
+                                    <p style="font-weight:bold;color:blue;">- Newly designed frame and sports swing arm.</p>
+
+                                 <p style="font-weight:bold;color:blue;">- Excellent looked full digital multifunctional instrument pane.</p>
+
+                                <p style="font-weight:bold;color:blue;">- A lightweight motorcycle which is only 123 Kilogram.</p>
+                          </p>
+                        </div>
+                  </div>
+
+
+                  <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                    <table style="border: 1px solid black;">
+<tr>
+<th style="border: 1px solid black;">Body Dimensions</th>
+
+</tr>
+<tr>
+<td tyle="border: 1px solid black;">Length / Width / Height</td>
+<td style="border: 1px solid black;">1973 mm / 822 mm / 1053 mm</td>
+</tr >
+<tr >
+<td style="border: 1px solid black;"> Wheel base</td>
+<td style="border: 1px solid black;">1,296 mm</td>
+</tr>
+<tr>
+<td tyle="border: 1px solid black;">Ground clearance</td>
+<td style="border: 1px solid black;">139 mm</td>
+</tr >
+<tr >
+<td style="border: 1px solid black;"> Fuel tank capacity</td>
+<td style="border: 1px solid black;">	8.5 Liters</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black;">Engine Details</th>
+
+</tr>
+<tr>
+<td tyle="border: 1px solid black;">Max net power</td>
+<td style="border: 1px solid black;">20.0 HP</td>
+</tr >
+<tr >
+<td style="border: 1px solid black;"> Displacement</td>
+<td style="border: 1px solid black;">149cc</td>
+</tr>
+<tr>
+<td tyle="border: 1px solid black;">Max net torque</td>
+<td style="border: 1px solid black;">14.50 NM</td>
+</tr >
+<tr >
+<td style="border: 1px solid black;"> Starting method</td>
+<td style="border: 1px solid black;">	Electric-Kick</td>
+</tr>
+
+
+</table>
+
+                  </div>
+                     </div>
+                    </div>
+                    <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                  </div>
+                </div>
+                </div>
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded" style="width: 25rem;" >
+                <img src="images/card2.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">Honda CBR150R Repsol </h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	150 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	160 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	35 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	480,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal9" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModallabel9">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header"style="text-align:center;">
+                          <h4 class="modal-title ml-1">Honda CBR150R Repsol</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card2.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                            <table style="border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black;">Honda CBR150R Repsol </th>
+      <th style="border: 1px solid black;">Price List</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; color:red;">Honda CBR150R Repsol ABS</td>
+      <td style="border: 1px solid black;color:red;">Tk.480,000.00</td>
+    </tr>
+  <tr >
+    <td style="border: 1px solid black; color:red;"> Honda CBR150R Repsol DD</td>
+    <td style="border: 1px solid black; color:red;">N/A
+  </td>
+    </tr>
+
+  </table>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+Honda CBR is always a big name, we are eligible only for this little boy of this CBR series named “Honda CBR 150R”. It’s been long this entry level CBR 150R bikes in Bangladesh, which was Honda CBR 150 & Honda CBR 150R Repsol edition. The Ripsol edition has the glorious history of the World MotoGp Championship. But Recently Honda has brought huge variations on CBR 150R in Bangladesh.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;">- Honda CBR 150R MotoGP comes with dual channel ABS.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- New emergency braking light system has been added with this model Honda CBR 150R MotoGP.</p>
+
+                                <p style="font-weight:bold;color:blue;">- Overall bikes are the same as before except for the front riser, front riser now in round shape, which is more attractive looking now.</p>
+
+                                      <p style="font-weight:bold;color:blue;">- In a word, the bike's engine power, extraordinary looks, and its past history put it a bit ahead of its rivals.</p>
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <h3 style="text-align:center;color: blue;">Spacification</h3>
+                      <table style="border: 1px solid black;">
+  <tr>
+  <th style="border: 1px solid black;">Body Dimensions</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Length / Width / Height</td>
+  <td style="border: 1px solid black;">1983 mm / 694 mm / 1038 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Wheel base</td>
+  <td style="border: 1px solid black;">1311 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Ground clearance</td>
+  <td style="border: 1px solid black;">166 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Fuel tank capacity</td>
+  <td style="border: 1px solid black;">	12 litres</td>
+  </tr>
+
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">17.1 Bhp @ 9000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">	149.5cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">14.5 Nm @ 7000 rp</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">Electric-Kick</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded" style="width: 25rem;">
+                <img src="images/card3.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">Suzuki Intruder 150 ABS</h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	150 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	115 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	40 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	275,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal91" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal91" tabindex="-1" role="dialog" aria-labelledby="myModallabel91">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header"style="text-align:center;">
+                          <h4 class="modal-title ml-1">Suzuki Intruder 150 ABS</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card3.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                            <table style="border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black;">Suzuki Intruder 150 ABS </th>
+      <th style="border: 1px solid black;">Price List</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; color:red;">Suzuki Intruder ABS</td>
+      <td style="border: 1px solid black;color:red;">Tk.275,000.00</td>
+    </tr>
+  <tr >
+    <td style="border: 1px solid black; color:red;">Suzuki Intruder FI ABS</td>
+    <td style="border: 1px solid black; color:red;">Tk.299,000.00
+  </td>
+    </tr>
+
+  </table>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+Suzuki Intruder is such a motorbike of Suzuki which entire body is newly designed, that looks vast from certain angles. Suzuki added a single channel ABS in this bike. There is also a Digital Instrument Console of the bike including Low Seat Height and Rear Disc Brake. The bike comes with a carburettor fuel system engine same as Gixxer. Recently Suzuki launched this bike in Bangladesh via Rancon Motorbikes Ltd.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;">- The Intruder ABS is very rare to see. The main attraction of this bike is the ABS (anti lock braking system). Also its striking design and outstanding graphics have given a different height of the bike.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- There is no noticeable change to this bike at the beginning of 2020. But the retail price has been decreased in the Bangladeshi market in the middle of 2020</p>
+
+
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <h3 style="text-align:center;color: blue;">Spacification</h3>
+                      <table style="border: 1px solid black;">
+  <tr>
+  <th style="border: 1px solid black;">Body Dimensions</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Length / Width / Height</td>
+  <td style="border: 1px solid black;">	2130 mm / 805 mm / 1095 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Wheel base</td>
+  <td style="border: 1px solid black;">1405 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Kerb weight</td>
+  <td style="border: 1px solid black;">148 kg</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Fuel tank capacity</td>
+  <td style="border: 1px solid black;">	11 litres</td>
+  </tr>
+
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">14.6 BHP @ 8000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">	154.9 cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">14 NM @ 6000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">Self</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded " style="width: 25rem;">
+                <img src="images/card4.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">Yamaha FZS Fi v3 ABS</h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	150 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	110 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	45 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	240,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal92" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal92" tabindex="-1" role="dialog" aria-labelledby="myModallabel92">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header"style="text-align:center;">
+                          <h4 class="modal-title ml-1">Yamaha FZS Fi v3 ABS</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card4.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                            <table style="border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black;">Yamaha FZS Fi v3 ABS</th>
+      <th style="border: 1px solid black;">Price List</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; color:red;">FZS Fi v3 Racing Blue (ABS)</td>
+      <td style="border: 1px solid black;color:red;">Tk.240,000.00</td>
+    </tr>
+  <tr >
+    <td style="border: 1px solid black; color:red;">FZS Fi v3 Matt Black (ABS)</td>
+    <td style="border: 1px solid black; color:red;">Tk.233,000.00
+  </td>
+    </tr>
+
+  </table>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+Once again Yamaha has launched stunning bikes in Bangladesh. This time they modified Yamaha FZS FI v2. Which now comes
+ with a bold look and single channel ABS named “Yamaha FZS FI v3”.
+ This FZS Fi v3 now completely new designed, new look and newly came in the Bangladesh market. Let’s see the key points of this bike.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;">- The bike Yamaha FZS Fi v3 comes with single channel ABS (anti-lock braking system).</p>
+
+                                  <p style="font-weight:bold;color:blue;">- The bike Yamaha FZS Fi v3 comes as a full naked sports bike.</p>
+
+                                <p style="font-weight:bold;color:blue;">- The Yamaha FZS Fi v3 comes with a newly designed dashboard with digital meter.</p>
+
+                                      <p style="font-weight:bold;color:blue;">- There is no noticeable change to this bike at the beginning of 2020. But Its retail price has decreased at the mid of 2020 in the Bangladeshi market.</p>
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <h3 style="text-align:center;color: blue;">Spacification</h3>
+                      <table style="border: 1px solid black;">
+  <tr>
+  <th style="border: 1px solid black;">Body Dimensions</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Length / Width / Height</td>
+  <td style="border: 1px solid black;">1983 mm / 694 mm / 1038 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Wheel base</td>
+  <td style="border: 1px solid black;">1311 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Ground clearance</td>
+  <td style="border: 1px solid black;">166 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Fuel tank capacity</td>
+  <td style="border: 1px solid black;">	12 litres</td>
+  </tr>
+
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">	9.7 kW (13.1PS) / 8000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">	149 cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">12.8 N.m (1.3 kg f.m) / 6000 rpm)</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">Electric</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+
+            </div>
+        <div class="card-deck">
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                  <img src="images/card5.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title"style="color:blue;">Kawasaki Ninja 125 ABS </h5>
+                  <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                    <p class="card-text" style="color:red;">
+                         Engine :	125cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed	120 </p>
+                      <p class="card-text"style="color:red;">
+                         Mileage	45 Kmpl </p>
+                      <p class="card-text"style="color:red;">
+                        Price in BDT	479,000 </p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal914" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal914" tabindex="-1" role="dialog" aria-labelledby="myModallabel914">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header">
+                          <h4 class="modal-title ml-1"style="text-align:center;">Kawasaki Ninja 125 ABS</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card5.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                          <h3>Kawasaki Ninja 125 Price in Bangladesh.</h3>
+                          <hr>
+                          <h4 style="color: blue;">Tk.479,000 <h5>(Dual Channel ABS Edition)</h5></h4>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+  In sports bike segment, Kawasaki doing extremely well. Entry level to heavy sports bike Kawasaki has huge number of positive reputation. It is one of the trusted brand for professional sports bikers. Due to motorcycle engine cc limitation, In Bangladesh modern quality Kawasaki sports bike still unavailable. But local Kawasaki fans are hoping, at list an entry level bike will be launched here. Yes “Kawasaki Ninja 125” launched here in Bangladesh, which is the youngest member of the legendary sport bike series “Ninja”.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;">- The Kawasaki Ninja 125 is a motorcycle in the Ninja sport bike series from the Japanese manufacturer Kawasaki that was first introduced in 2018. Ninja 125 and Z125, both new models designed to meet the requirements of European A1 license holders.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- The Ninja 125 Sporty performance in a slim, lightweight and compact package is complemented by naturally aggressive ergonomics.</p>
+
+                                <p style="font-weight:bold;color:blue;">- The Kawasaki Ninja 125 comes with an full-digital instrument console and its fuel system "fuel injection".</p>
+
+                                      <p style="font-weight:bold;color:blue;">- The bike Kawasaki Ninja 125 also comes with high perform 290mm front & 220mm rear disc brake with dual channel ABS.</p>
+
+                                   <p style="font-weight:bold;color:blue;">- Ninja 125 also have strong and fat 37mm telescopic suspension and gas-charged rear monoshocks. the competitor of Kawasaki Ninja 125 in Bangladesh is Yamaha R15 v3 and Honda CBR150R.</p>
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <hr>
+                      <hr>
+                      <table style="border: 1px solid black;">
+                        <tr>
+                        <th style="border: 1px solid black;">Engine Details</th>
+
+                        </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Engine type</td>
+  <td style="border: 1px solid black;">Liquid-cooled, 4-stroke</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;">Cylinder arrangement</td>
+  <td style="border: 1px solid black;">Single cylinder</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Fuel tank capacity</td>
+  <td style="border: 1px solid black;">11 liters</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Transmission type</td>
+  <td style="border: 1px solid black;">Return type 6-speed</td>
+  </tr>
+
+
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">15 HP @ 10,000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">125 cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">11.7 Nm @ 7,700 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">		Electric start</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded" style="width: 25rem;" >
+                <img src="images/card6.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">Suzuki GSX R150 </h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	150 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	130 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	43 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	350,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal915" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal915" tabindex="-1" role="dialog" aria-labelledby="myModallabel915">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header">
+                          <h4 class="modal-title ml-1"style="text-align:center;">Suzuki GSX R150</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card5.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                          <h3>Suzuki GSX R150 Price in Bangladesh 2020</h3>
+                          <hr>
+                          <h4 style="color: blue;">Tk.350,000  <h5>(Front & Rear Disc Brake Edition)</h5></h4>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+  Suzuki GSX R150 is one of the most popular inventions of Suzuki in the 150 cc segment in Bangladeshi bike market. The unique design and powerful engine have created a value of this model to the all fashionable bikers. This model was initially launched by Suzuki
+  on 2nd November 2016 in Indonesia. Gradually, it got wide popularity throughout the South Asian market.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;">- The main attraction of this bike is its remarkable sporty look and its engine efficiency
+                                which is also worth mentioning. It uses a fuel injected, water cooled engine and without fluids GSX R150 weighs just 126 kg. The
+                                looks and style of Suzuki GSX – R150 is totally unique in Bangladesh.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- In comparison to Bangladesh, GSX R150 price is relatively high in the local market. At
+                                    the end of the year 2019, there is no significant change coming to the bike in Bangladesh. But the new colors and graphics versions have been added.</p>
+
+                                <p style="font-weight:bold;color:blue;">- There is no noticeable change to this GSX R150 at the beginning of 2020. But the retail price has been decreased
+                                  in the Bangladeshi market in the middle of 2020.</p>
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <hr>
+                      <hr>
+                      <table style="border: 1px solid black;">
+                        <tr>
+                        <th style="border: 1px solid black;">Body Dimensions</th>
+
+                        </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Length / Width / Height</td>
+  <td style="border: 1px solid black;">2020 mm / 700 mm / 1075 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;">Wheel base</td>
+  <td style="border: 1px solid black;">1300 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Fuel tank capacity</td>
+  <td style="border: 1px solid black;">11 Ltrs</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Ground clearance</td>
+  <td style="border: 1px solid black;">160 mm</td>
+  </tr>
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">	18.90 Bhp @ 10,500 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">	147.3 cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">14 NM @ 9000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">	Electric-Kick</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded" style="width: 25rem;">
+                <img src="images/card7.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">Yamaha XSR 155</h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	155 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	145 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	42 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	525,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal916" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal916" tabindex="-1" role="dialog" aria-labelledby="myModallabel916">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header">
+                          <h4 class="modal-title ml-1"style="text-align:center;">Yamaha XSR 155</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card7.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                          <h3>Yamaha XSR 155 Price List for BD</h3>
+                          <hr>
+                          <h4 style="color: blue;">Tk.525,000.00 </h4>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+  Japanese motorcycle brand Yamaha has added another new bike to their fleet in Bangladesh. Which is the youngest member of the Yamaha XSR series Yamaha XSR 155. This is a Cafe Racer Motorcycle. Such motorcycles are very rare in Bangladesh.
+   However, in this country of red and green, quality products are always the priority. Let's see the main features of the Yamaha XSR 155 bike.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;"> - This bike is basically a Cafe Racer type bike based on Yamaha MT-15 motorcycle model.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- The Yamaha XSR 155 bike is basically a 'Sport Heritage' bike, with the same design as the XSR 700 and XSR 900.</p>
+
+                                <p style="font-weight:bold;color:blue;">- Yamaha XSR 155 will be quite suitable in places like Dhaka city. The rider will be extremely
+                                  comfortable and easy to control the bike from the proper position.</p>
+                                  <p style="font-weight:bold;color:blue;"> - The Yamaha XSR 155 bike has Dual Channel ABS, which is very helpful for safe riding.</p>
+                                  <p style="font-weight:bold;color:blue;"> - However, the retail price of Yamaha XSR 155 motorcycle is much higher in Bangladesh.</p>
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <hr>
+                      <p>The bike uses a 155.1 cc engine, which is a single cylinder, liquid cooled, FI
+                        (fuel injection) engine with a maximum power of 19.3 HP @ 10,000 rpm, a maximum torque of 14.7 Nm
+                         @ 8500 rpm. This bike has 6 speed manual gear and its maximum speed is 145 kilometers per hour. Its fuel
+                          tank capacity is 10 liters and its mileage is about 40 kilometers per liter. More details about this bike are given below.</p>
+                      <hr>
+                      <table style="border: 1px solid black;">
+                        <tr>
+                        <th style="border: 1px solid black;">Body Dimensions</th>
+
+                        </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Length / Width / Height</td>
+  <td style="border: 1px solid black;">2000 mm / 805 mm / 1080 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;">Wheel base</td>
+  <td style="border: 1px solid black;">1330 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Fuel tank capacity</td>
+  <td style="border: 1px solid black;">11 Ltrs</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Ground clearance</td>
+  <td style="border: 1px solid black;">170 mm</td>
+  </tr>
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">		19.3 HP @ 10,000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">155.1 cm3</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">14.7 NM @ 8500 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">	Electric / kick</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 bg-white rounded " style="width: 25rem;">
+                <img src="images/card8.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"style="color:blue;">KTM RC 125 (European)</h5>
+                  <p class="card-text" style="color:red;">
+                         Engine :	125 cc </p>
+                      <p class="card-text"style="color:red;">
+                         Top Speed :	125 Kmph </p>
+                      <p class="card-text"style="color:red;">
+                        Mileage :	36 Kmpl  </p>
+                      <p class="card-text"style="color:red;">
+                       Price in BDT :	600,000</p>
+                      <a href="#" class="btn btn-info mb-auto" style="width: auto;">Add To Cart </a>
+                      <button class="btn bg-primary mx-2 my-sm-0" data-toggle="modal" data-target="#myModal917" type="button">Details</button>
+                    </div>
+                  </div>
+                  <div class="modal fade " id="myModal917" tabindex="-1" role="dialog" aria-labelledby="myModallabel917">
+                    <div class="modal-dialog modal-dialog-srollable">
+                      <div class="modal-content ml-1">
+                        <div class="modal-header">
+                          <h4 class="modal-title ml-1"style="text-align:center;">KTM RC 125 (European)</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                         <div class="container">
+                          <div class="row ml-1">
+                  <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                            <img src="images/card8.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          </div>
+                          <div class="form-group col-lg-8 col-md-12 col-sm-12">
+                            <table style="border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black;">KTM Duke 125 </th>
+      <th style="border: 1px solid black;">Price in Bangladesh</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; color:red;">KTM Duke 125 European (ABS)</td>
+      <td style="border: 1px solid black;color:red;">Tk.595,000.00</td>
+    </tr>
+  <tr >
+    <td style="border: 1px solid black; color:red;">KTM Duke 125 Indian (ABS)</td>
+    <td style="border: 1px solid black; color:red;">Tk.360,000.00
+  </td>
+    </tr>
+
+  </table>
+
+                          </div>
+                         </div>
+                  <div class="row ml-1">
+                           <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Quick Overview :</h4>
+  KTM Duke 125 is an introductory bike from the Austrian bike maker KTM. It's a sports bike that combines powerful engines, completely different style, sleek Sportive Look, different color and graphics. Only very few models are available in Bangladesh from this world famous company, among which KTM Duke
+  125 is one. Although its price is almost sky-high in the context of Bangladesh, it is also being added to the collection of amateur bikes here.
+                            </p>
+                  </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <p>
+                              <h4>Key Features of Honda :</h4>
+                              <p style="font-weight:bold;color:blue;"> - There is a huge difference between KTM Duke 125 European Version and Indian
+                                Version where Design, LED Headlight, Wire & Tyres, Fuel Tank, Ground Clearance & Dry Weight, Instrument Console even price are not the same.</p>
+
+                                  <p style="font-weight:bold;color:blue;">- KTM Duke 125 Indian Version is a pure naked street sports bike which has almost all components
+                                    made by Bajaj Auto India. Where the main concept was to build a quality naked sports bike within a cost effective formula.</p>
+
+                                <p style="font-weight:bold;color:blue;">- KTM Duke European Version is also the same as a pure naked sports bike, which is made by KTM Europe.
+                                   This version is expensive, They don’t compromise with price sensitive issues.</p>
+
+
+
+                            </p>
+                          </div>
+                    </div>
+
+
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                      <hr>
+                      <p>In this bike, the 124.7cc engine has been used, which is Single-cylinder 4-Stroke Engine and Water-Cooled. Its maximum power is 14.75 Bhp @ 9500 rpm and the maximum torque 11.80 Nm @ 8000 rpm. It uses 6-speed manual gear, and its
+                         maximum speed is 120 kilometers per hour. The bike, which has 13.4 liters of fuel capacity, is able to cross about 30 kilometers per liter of fuel.</p>
+                      <hr>
+                      <table style="border: 1px solid black;">
+                        <tr>
+                        <th style="border: 1px solid black;">Body Dimensions</th>
+
+                        </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Seat Height</td>
+  <td style="border: 1px solid black;">830 mm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;">Wheel base</td>
+  <td style="border: 1px solid black;">1357 mm</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Fuel tank capacity</td>
+  <td style="border: 1px solid black;">13.4 liters</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Ground clearance</td>
+  <td style="border: 1px solid black;">185 mm</td>
+  </tr>
+  <tr>
+  <th style="border: 1px solid black;">Engine Details</th>
+
+  </tr>
+
+  <tr>
+  <td tyle="border: 1px solid black;">Max net power</td>
+  <td style="border: 1px solid black;">14.75 Bhp @ 9500 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Displacement</td>
+  <td style="border: 1px solid black;">124.7 cc</td>
+  </tr>
+  <tr>
+  <td tyle="border: 1px solid black;">Max net torque</td>
+  <td style="border: 1px solid black;">11.80 Nm @ 8000 rpm</td>
+  </tr >
+  <tr >
+  <td style="border: 1px solid black;"> Starting method</td>
+  <td style="border: 1px solid black;">Electric</td>
+  </tr>
+
+
+  </table>
+
+                    </div>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+
+
+            </div>
+            <!-- deck of cards end-->
+          </div>
+
+
+
+
+
+            <div class="jumbotron" style="background: url(images/j1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+                <h5 class="display-4 text-primary" style=" color:#FE2EF7 !important;text-align: center;font-size:290%;">Bike Mart </h5>
+                <h3 class="text-primary" style=" text-align: center;font-size:350%;color:green !important;">Special offer 60% off. </h3>
+            </div>
+
+<!-- offer card-->
+<div class="mt-4mb-3" style="margin-top: 50px;"style="margin-bottom: 50px;">
+<h6 style="text-align: center;font-size: 200%; color:red;"> Special offer</h6>
+</div>
+
+
+<div class="card-deck">
+
+              <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                  <img src="images/bikecard5.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title"style="color:red;">Honda CB Shine SP </h5>
+                  <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                    <p class="card-text" style="color:blue;">Engine	125 cc </p>
+<p class="card-text"style="color:blue;">Top Speed	100 Kmph </p>
+<p class="card-text"style="color:blue;">Mileage	55 Kmpl </p>
+<p class="card-text"style="color:blue;">Price in BDT	136,000 </p>
+
+                  </div>
+                </div>
+
+                <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                    <img src="images/bikecard7.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color:red;">Yamaha M-Slaz 150 </h5>
+                    <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                      <p class="card-text"style="color:blue;">Engine	150 cc </p>
+<p class="card-text"style="color:blue;">Top Speed	130 Kmph </p>
+<p class="card-text"style="color:blue;">Mileage	35 Kmpl </p>
+<p class="card-text"style="color:blue;">Price in BDT	450,000 </p>
+
+                    </div>
+                  </div>
+
+                  <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                      <img src="images/bikecard9.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color:red;">Bajaj Pulsar NS 160 </h5>
+                      <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                        <p class="card-text"style="color:blue;">Engine	160 cc </p>
+<p class="card-text"style="color:blue;">Top Speed	120 Kmph </p>
+<p class="card-text"style="color:blue;">Mileage	38 Kmpl </p>
+<p class="card-text"style="color:blue;"> 232,900</p>
+                      </div>
+                    </div>
+
+                    <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                        <img src="images/bikecard15.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                        <div class="card-body">
+                          <h5 class="card-title"style="color:red;">Honda Livo Disc </h5>
+                        <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                          <p class="card-text"style="color:blue;">Engine	110 cc </p>
+<p class="card-text"style="color:blue;">Top Speed	86 Kmph </p>
+<p class="card-text"style="color:blue;">Mileage	65 Kmpl </p>
+<p class="card-text"style="color:blue;"> 110,900</p>
+
+
+                        </div>
+                      </div>
+
+                      <div class="card shadow col-6 col-lg-3 mb-3 mt-2  bg-white rounded" style="width: 2000px;">
+                          <img src="images/bikecaed16.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title"style="color:red;">TVS Max 125 </h5>
+                          <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                            <p class="card-text"style="color:blue;">Engine	125 cc </p>
+<p class="card-text"style="color:blue;">Top Speed	100 Kmph </p>
+<p class="card-text"style="color:blue;">Mileage	65 Kmpl </p>
+<p class="card-text"style="color:blue;">Price in BDT	132,900 </p>
+
+                          </div>
+                        </div>
+
+              </div>
+
+              <!-- upcomming card-->
+              <div class="mt-4mb-3" style="margin-top: 50px;"style="margin-bottom: 50px;">
+              <h6 style="text-align: center;font-size: 200%; color:red;"> Upcomming Bike</h6>
+              </div>
+
+              <div class="card-deck">
+
+                            <div class="card shadow col-6 col-lg-3 mb-3 mt-2 ml-4  bg-white rounded" style="width: 2000px;">
+                                <img src="images/upcard.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                                <div class="card-body">
+                                  <h5 class="card-title"style="color:red;">TVS Apache RTR 160 ABS  </h5>
+
+
+                                </div>
+                              </div>
+
+                              <div class="card shadow col-6 col-lg-3 mb-3 mt-2 ml-4 bg-white rounded" style="width: 2000px;">
+                                  <img src="images/upcard1.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                                  <div class="card-body">
+                                    <h5 class="card-title"style="color:red;">Bajaj Pulsar NS 160 ABS </h5>
+                                  <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+
+
+                                  </div>
+                                </div>
+
+                                <div class="card shadow col-6 col-lg-3 mb-3 mt-2 ml-4 bg-white rounded" style="width: 2000px;">
+                                    <img src="images/upcard2.jpg" class="card-img-top" alt="cardimage" loading="lazy">
+                                    <div class="card-body">
+                                      <h5 class="card-title"style="color:red;">Suzuki Gixxer New Edition </h5>
+                                    <!--  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+
+                                    </div>
+                                  </div>
+                                </div>
+    <div class="container-fluid ">
+      <div class="row mt-4 border border-dark bg-dark text-white "Style="border-width:10%;">
+       <div class="col-lg-5 border border-0 ml-3"  style="margin-top: 50px;">
+    <h4>Bike Mart</h4>
+    <h6>-Buy your Dream bike from here.</h6><h5> </h5>
+    <a>Call us : </a><a href="#" > 01796527698 </a><h5> </h5>
+    <a>Email :  </a><a href="#" >nkhaled162145@bscse.uiu.ac.bd </a><h5> </h5>
+
+  </div>
+      <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+        <h4>TOP FOREIGN BRANDS</h4>
+        <a href="#" >Honda (Japan) </a><h5> </h5>
+        <a href="#" >Yamaha (Japan) </a><h5> </h5>
+        <a href="#" >Suzuki (Japan)</a><h5> </h5>
+        <a href="#" >Bajaj (India) </a><h5> </h5>
+          <a href="#" >TVS (India)</a><h5> </h5>
+            <a href="#" >Keeway (multinational) </a><h5> </h5>
+
+
+      </div>
+          <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+            <h4>TOP LOCAL BRANDS</h4>
+            <a href="#" >Runner (Bangladesh) </a><h5> </h5>
+            <a href="#" >Walton (Bangladesh)</a><h5> </h5>
+            <a href="#" >Roadmaster (Bangladesh) </a><h5> </h5>
+            <a href="#" >AtlasZongshen (Bangladesh) </a><h5> </h5>
+
+          </div>
+              <div class="col-lg-2 border border-0" style="margin-top: 50px;">
+                <h4>POPULAR SEARCH</h4>
+                <a href="#" >Fuel Efficient Bikes</a><h5> </h5>
+                <a href="#" >Modern Bikes with ABS </a><h5> </h5>
+                  <a href="#" >Cheape Bikes </a><h5> </h5>
+                    <a href="#" >Sports Bike </a><h5> </h5>
+
+              </div>
+
+
+              <div class="col-12 border border-0  text-primary  " style="text-align:center;margin-top: 50px;">
+                  <h6>@2020 MIt License,all right reserved.</h6>
+                </div>
+
+
+
+</div>
+</div>
+
+
+
+<script>
+function mailvalidate(){
+                  var emailexp=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+                  var useremail=document.getElementById("email").value;
+
+                  if(emailexp.test(useremail)){
+                      document.getElementById("inv-mail").style.display="none";
+                  }
+                  else{
+                      document.getElementById("inv-mail").style.display="inline";
+                  }
+              }
+              function phonevalidate(){
+                                var emailexp=/^([01]|\+88)?\d{11}$/;
+
+                                var userphone=document.getElementById("phone").value;
+
+                                if(emailexp.test(userphone)){
+                                    document.getElementById("inv-phone").style.display="none";
+                                }
+                                else{
+                                    document.getElementById("inv-phone").style.display="inline";
+                                }
+                            }
+
+var pass=document.getElementById('pwd');
+    pass.addEventListener('keyup',passcheck);
+
+
+
+function passcheck(){
+var passname=pass.value;
+
+var fname4=/^[A-Z]+[A-Za-z0-9]*[a-z]+.{10,}$/;
+
+if(fname4.test(passname)){
+               pass.classList.add('is-valid');
+               pass.classList.remove('is-invalid');
+           }
+           else{
+               pass.classList.add('is-invalid');
+               pass.classList.remove('is-valid');
+           }
+
+}
+
+var pass=document.getElementById('pwd');
+var pass1=document.getElementById('cpwd');
+    pass1.addEventListener('keyup',passcheck1);
+
+
+
+function passcheck1(){
+var passname=pass.value;
+var passname1=pass1.value;
+
+
+
+
+if(passname==passname1){
+               pass1.classList.add('is-valid');
+               pass1.classList.remove('is-invalid');
+           }
+           else{
+               pass1.classList.add('is-invalid');
+               pass1.classList.remove('is-valid');
+           }
+
+}
+
+    </script>
+
+
+
+
+
+
+        <!-- adding jquery then popper then bootstrap JS libraries -->
+        <script type="text/javascript" src="lib/js/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    </body>
+</html>
